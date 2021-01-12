@@ -1,1 +1,249 @@
-#my-cv
+/*css-reset*/
+/*#region*/
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: '';
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+/*#endregion*/
+
+.wrapper {
+  height: 100vh;
+  width: 100vw;
+  display: grid;
+  grid-template-columns: 1fr 3fr;
+  grid-template-rows: repeat(21, 1fr);
+  gap: 0px 0px;
+  font-family: Montserrat, sans-serif;
+}
+
+.namecard,
+.contact,
+.personnel {
+  background: #34558b;
+  color: #fafafa;
+}
+.namecard {
+  grid-area: 1 / 1 / 8 / 2;
+  text-align: center;
+  padding-top: 3rem;
+}
+.namefield {
+  padding-top: 1rem;
+}
+.name {
+  font-weight: 600;
+  font-size: 3rem;
+}
+.familyname {
+  font-size: 1.5rem;
+}
+
+.title {
+  background: #fafafa;
+  color: #34558b;
+  width: 85%;
+  font-weight: 600;
+  font-size: 1.5rem;
+  text-transform: uppercase;
+  padding: 3% 0;
+  text-align: center;
+  margin: 0 0 0 auto;
+}
+
+table {
+  margin-top: 1rem;
+  margin-left: 15%;
+}
+td {
+  padding: 4% 0 4% 0;
+  text-align: left;
+}
+.table-title {
+  font-weight: 600;
+  font-size: 1.5rem;
+}
+
+.contact {
+  grid-area: 8 / 1 / 14 / 2;
+  text-align: center;
+}
+
+a {
+  text-decoration: none;
+  color: #fafafa;
+}
+
+.right {
+  text-align: right;
+}
+
+.personnel {
+  grid-area: 14 / 1 / 22 / 2;
+}
+
+.table-mini {
+  width: 70%;
+}
+.table-mini td {
+  padding: 0 0 3% 0;
+}
+.table-main {
+  margin: 0;
+  margin-top: 1rem;
+  width: 85%;
+  margin-left: 3rem;
+}
+.table-main p,
+.date {
+  font-weight: 600;
+}
+
+.table-main td:first {
+  width: 400px;
+}
+
+.table-main td {
+  padding: 0.5rem;
+}
+
+.title-rev {
+  background: #34558b;
+  color: #fafafa;
+  width: 85%;
+  font-weight: 600;
+  font-size: 1.5rem;
+  padding: 1%;
+  margin: 0 auto 0 0;
+}
+
+.experience {
+  grid-area: 2 / 2 / 10 / 3;
+}
+
+.edu {
+  grid-area: 10 / 2 / 16 / 3;
+}
+
+.autre {
+  grid-area: 16 / 2 / 22 / 3;
+}
