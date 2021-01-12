@@ -208,9 +208,8 @@ a {
 }
 .table-main {
   margin: 0;
-  margin-top: 1rem;
+  margin: 1rem 0 1rem 3rem;
   width: 80%;
-  margin-left: 3rem;
 }
 .table-main p,
 .date {
