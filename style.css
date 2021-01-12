@@ -125,7 +125,9 @@ table {
   border-spacing: 0;
 }
 /*#endregion*/
-
+body {
+  background: #34558b;
+}
 .wrapper {
   width: 100%;
   display: grid;
@@ -236,12 +238,20 @@ a {
 
 .experience {
   grid-area: 2 / 2 / 10 / 3;
+  background: #fafafa;
 }
 
 .edu {
   grid-area: 10 / 2 / 16 / 3;
+  background: #fafafa;
 }
 
 .autre {
   grid-area: 16 / 2 / 22 / 3;
+  background: #fafafa;
+}
+
+.head {
+  grid-area: 1 / 2 / 2 / 3;
+  background: #fafafa;
 }
