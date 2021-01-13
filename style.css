@@ -125,6 +125,11 @@ table {
   border-spacing: 0;
 }
 /*#endregion*/
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
 body {
   background: #34558b;
 }
@@ -254,4 +259,166 @@ a {
 .head {
   grid-area: 1 / 2 / 2 / 3;
   background: #fafafa;
+}
+
+.grid-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: flex-start;
+
+  max-width: 85%;
+  margin: 2rem 0;
+}
+
+.leftblock {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(6, 1fr);
+  gap: 5px 0px;
+  grid-template-areas:
+    'lefta1 leftb1'
+    'lefta2 leftb2'
+    'lefta3 leftb3'
+    'lefta4 leftb4'
+    'lefta5 leftb5'
+    'lefta6 leftb6';
+  grid-area: leftblock;
+}
+
+.lefta1 {
+  grid-area: lefta1;
+}
+
+.lefta2 {
+  grid-area: lefta2;
+}
+
+.lefta3 {
+  grid-area: lefta3;
+}
+
+.lefta4 {
+  grid-area: lefta4;
+}
+
+.lefta5 {
+  grid-area: lefta5;
+}
+
+.lefta6 {
+  grid-area: lefta6;
+}
+
+.leftb1 {
+  grid-area: leftb1;
+}
+
+.leftb2 {
+  grid-area: leftb2;
+}
+
+.leftb3 {
+  grid-area: leftb3;
+}
+
+.leftb4 {
+  grid-area: leftb4;
+}
+
+.leftb5 {
+  grid-area: leftb5;
+}
+
+.leftb6 {
+  grid-area: leftb6;
+}
+
+.rightblock {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(6, 1fr);
+  gap: 5px 0px;
+  grid-template-areas:
+    'righta1 rightb1'
+    'righta2 rightb2'
+    'righta3 rightb3'
+    'righta4 rightb4'
+    'righta5 rightb5'
+    'righta6 rightb6';
+  grid-area: rightblock;
+}
+
+.righta1 {
+  grid-area: righta1;
+}
+
+.righta2 {
+  grid-area: righta2;
+}
+
+.righta3 {
+  grid-area: righta3;
+}
+
+.righta4 {
+  grid-area: righta4;
+}
+
+.righta5 {
+  grid-area: righta5;
+}
+
+.righta6 {
+  grid-area: righta6;
+}
+
+.rightb1 {
+  grid-area: rightb1;
+}
+
+.rightb2 {
+  grid-area: rightb2;
+}
+
+.rightb3 {
+  grid-area: rightb3;
+}
+
+.rightb4 {
+  grid-area: rightb4;
+}
+
+.rightb5 {
+  grid-area: rightb5;
+}
+
+.rightb6 {
+  grid-area: rightb6;
+}
+
+.rect-wrp {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.rect-name {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+}
+.rect {
+  width: 10px;
+  height: 10px;
+  border: 2px solid #34558b;
+}
+
+.rectA {
+  width: 10px;
+  height: 10px;
+  border: 2px solid #34558b;
+  background-color: #34558b;
 }
